@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BatteryChecker</string>
+    <string name="description1">BatteryChecker <b>widget</b> checks the battery level every <b> twelve hours</b> (or additional finer time interval) and <b>notify you</b>.</string>
+    <string name="description2">        You can specify the battery level and time interval to<b> be notified</b>. When battery is below the specified
+        level, you can be notified by - <b>email, text message and Android notification </b>.</string>
+    <string name="action_settings">Show Image Settings</string>
+    <string name="appwidget_text">Battery Checker</string>
+    <string name="appwidget_text2">Power Level</string>
+    <string name="appwidget_update_text">Battery Checker New Application Update Version</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_show_image">ShowImageActivity</string>
+    <string name="title_activity_out_put">OutPut</string>
+    <string name="title_activity_check_level">CheckLevelActivity</string>
+    <string name="check_level">Check Battery Level</string>
+    <string name="title_activity_time_interval">TimeIntervalActivity</string>
+    <string name="battery_checker_features">Battery Checker Features</string>
+    <string name="time_interval">Time Interval</string>
+    <string name="email_message">This is an email message from Kieu Batterychecker Android widget to report
+                the battery level of Kieu android device. The message is:</string>
+    <string name="config_level"><b>Level</b> is 40%</string>
+    <string name="config_interval"><b>Interval</b> is 12 hours</string>
+    <string name="config_touch">(touch to change)</string>
+    <string name="config_notify">Android notify (default):</string>
+    <string name="notify_methods">Notify Methods</string>
+    <string name="title_activity_notify_methods">NotifyMethodsActivity</string>
+    <string name="senderLabelHint">Sender <b>gmail</b>: </string>
+    <string name="senderHint">k888@gmail.com</string>
+    <string name="emailHint">k978@hotmail.com, k888@yahoo.com,..., k777@gmail.com</string>
+    <string name="phonesHint">999 888 7777,..., (888) 777-6666</string>
+    <string name="emailMsg">Need Email info to enable Email checkbox</string>
+    <string name="textMsg">Need Text info to enable Text checkbox</string>
+</resources>

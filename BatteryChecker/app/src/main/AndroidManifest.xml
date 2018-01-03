@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xfsi.batterychecker.app" >
+
+    <uses-sdk
+    android:minSdkVersion="14"
+    android:targetSdkVersion="19"
+    tools:node="replace" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/battery3_64x64"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.xfsi.batterychecker.app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xfsi.batterychecker.app.BatteryAppWidgetConfigureActivity"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.xfsi.batterychecker.app.BatteryAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.xfsi.batterychecker.action.EXPLICIT_UPDATE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name="com.xfsi.batterychecker.app.CheckLevelActivity"
+            android:label="@string/title_activity_check_level"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name="com.xfsi.batterychecker.app.TimeIntervalActivity"
+            android:label="@string/title_activity_time_interval"
+            android:parentActivityName=".MainActivity">
+        </activity>
+    </application>
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

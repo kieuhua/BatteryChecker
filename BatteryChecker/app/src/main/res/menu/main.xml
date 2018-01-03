@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/emailInfo"
+        android:icon="@drawable/gmail_32x32"
+        android:title="Email info"
+         android:showAsAction="ifRoom|withText"
+        />
+    <item android:id="@+id/textInfo"
+        android:icon="@drawable/text_100x100"
+        android:title="Text info"
+        android:showAsAction="ifRoom|withText"
+        />
+    <!--<item android:id="@+id/notify_settings"
+        android:icon="@drawable/notify_b_40"
+        android:title="Notify Settings"
+        android:showAsAction="ifRoom|withText"
+        />-->
+</menu>

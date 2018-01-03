@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 7200000 = 12*60000 ( 12 hours by default update widget even w/o alarm -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.xfsi.batterychecker.app.BatteryAppWidgetConfigureActivity"
+    android:initialKeyguardLayout="@layout/new_app_widget"
+    android:initialLayout="@layout/new_app_widget"
+    android:minHeight="90dp"
+    android:minWidth="120dp"
+    android:previewImage="@drawable/battery_128x128"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="432000000"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

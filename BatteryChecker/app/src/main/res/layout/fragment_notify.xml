@@ -1,0 +1,121 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xfsi.batterychecker.app.NotifyFragment"
+    android:background="#fffff5c6">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:paddingTop="10dp"
+        android:text="@string/notify_methods"
+        android:textColor="#34AD44"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="70dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:id="@+id/emailChkBx"
+            android:layout_marginLeft="5dp"
+            android:focusable="true"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Message"
+            android:id="@+id/textChkBx"
+            android:layout_marginLeft="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notify"
+            android:id="@+id/notifyChkBx"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/l20_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:src="@drawable/gmail_64x64" />
+
+        <ImageView
+            android:id="@+id/l40_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:src="@drawable/text_100x100"
+            android:layout_marginTop="-10dp" />
+
+        <ImageView
+            android:id="@+id/l60_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:src="@drawable/and_notify_64x64" />
+
+    </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:id="@+id/notify_apply"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="170dp"
+            android:background="#ff82ff7b"
+            android:layout_marginLeft="200dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailMsg"
+            android:id="@+id/eMsgTx"
+            android:textStyle="italic"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textMsg"
+            android:id="@+id/tMsgTx"
+            android:textStyle="italic"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+</FrameLayout>

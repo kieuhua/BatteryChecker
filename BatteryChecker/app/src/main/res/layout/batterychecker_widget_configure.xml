@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffc7fffd"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffc7fffd">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/configtl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp"
+                android:text="Battery Checker Configuration"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ff0e2eff"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGLevel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_l20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Level 20%"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_l40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Level 40%"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_l60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level 60%"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custom"
+                    android:textSize="10dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/l20_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/level_20_40" />
+
+                <ImageView
+                    android:id="@+id/l40_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="60dp"
+                    android:src="@drawable/level_40_40" />
+
+                <ImageView
+                    android:id="@+id/l60_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="50dp"
+                    android:src="@drawable/level_60_40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tMsgId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text="Selected level"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/levelET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:ems="10"
+                    android:hint="40"
+                    android:inputType="number"
+                    android:longClickable="false"
+                    android:maxLength="10"
+                    android:maxWidth="4dp"
+                    android:numeric="integer"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/percentTx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGInterval"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_marginTop="10dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp">
+
+                <RadioButton
+                    android:id="@+id/radio_h4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="4 hours"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_h8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8 hours"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_h12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="12 hours"
+                    android:textSize="10dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_interval_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="custom"
+                    android:textSize="10dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/Interval_linearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/h4_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/h4_64" />
+
+                <ImageView
+                    android:id="@+id/h8_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:src="@drawable/h8_64" />
+
+                <ImageView
+                    android:id="@+id/h12_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="30dp"
+                    android:src="@drawable/h12_64" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/linearLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginLeft="100dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/intervalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="40dp"
+                    android:text="Selected Interval"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/intervalET"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="50dp"
+                    android:ems="10"
+                    android:hint="12"
+                    android:inputType="number"
+                    android:longClickable="false"
+                    android:maxLength="10"
+                    android:maxWidth="4dp"
+                    android:numeric="integer"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/hoursText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hours"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="@string/config_notify"
+                android:textSize="16dp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/notifyChkBx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Android notification"
+                        android:textColor="#ff0e2eff"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/and_notify_64x64" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Widget Name"
+                        android:id="@+id/textView" />
+
+                    <EditText
+                        android:id="@+id/appwidgetET"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:width="220dp"
+                        android:textAlignment="center"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/donebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Done" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

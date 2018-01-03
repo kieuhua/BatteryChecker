@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffbafdff">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery Checker"
+        android:id="@+id/textView"
+        android:textColor="#ff0e2eff"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/batteryNow"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/textView"
+        android:textSize="20dp"
+        android:textColor="#ff22882d"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/batteryNow"
+        android:id="@+id/tMsgId"
+        android:text="@string/description1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tMsgId"
+        android:text="@string/description2"
+        android:textSize="14dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" />
+
+
+</RelativeLayout>

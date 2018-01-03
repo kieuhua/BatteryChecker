@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffd1e1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/battery_checker_features"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textColor="#ff4d2c65"
+        android:textStyle="bold"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="false"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/level_icon"
+                android:paddingLeft="30dp"
+                android:src="@drawable/level_40_40" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/interval_icon"
+                android:src="@drawable/h6_64"
+                android:layout_marginLeft="80dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/notify_icon"
+                android:src="@drawable/notify_blue"
+                android:layout_marginLeft="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Battry level"
+                android:id="@+id/level_text"
+                android:paddingLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Interval"
+                android:id="@+id/interval_text"
+                android:paddingLeft="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notify"
+                android:id="@+id/notify_text"
+                android:paddingLeft="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/level"
+                android:width="45dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:textColor="#ff0e2eff"
+                android:numeric="integer"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/precentText"
+                android:text="%"
+                android:width="35dp"
+                android:textSize="14dp"
+                android:textStyle="italic"
+                android:maxWidth="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/interval"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:width="25dp"
+                android:layout_marginLeft="50dp"
+                android:textColor="#ff0e2eff"
+                android:numeric="integer"
+                android:maxLength="4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hoursText"
+                android:text="hours"
+                android:textSize="12dp"
+                android:width="60dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/notify1"
+                android:textColor="#ff0e2eff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/notify2"
+                android:textColor="#ff0e2eff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/notify3"
+                android:textColor="#ff0e2eff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
